@@ -1,0 +1,47 @@
+#spreadsheet-div table {
+    border-collapse:collapse;
+    table-layout: fixed;
+    border: 1pt solid black;
+    empty-cells: show;
+}
+
+#spreadsheet-div th {
+    width: 4em;
+    border: 1pt solid black;
+    display:inline-block;
+    height: 2em;
+}
+
+
+#spreadsheet-div tr {
+    white-space:nowrap;
+}
+
+#spreadsheet-div th, #spreadsheet-div tr td:first-child {
+        text-align:center;
+        vertical-align:middle;
+        font-weight:bold;
+        background:gray;
+    }
+
+#spreadsheet-div th::after, #spreadsheet-div tr td:first-child::after {
+               content: " ";
+               height:2em;
+
+               background:pink;
+               display:inline-block;
+               vertical-align:middle;
+           }
+
+#spreadsheet-div td {
+    display:inline-block;
+    border: 1pt solid black;
+    width: 4em;
+    height: 2em;
+}
+
+#spreadsheet-div td.selected {
+
+    background: #ddffdd;
+
+}

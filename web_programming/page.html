@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>SpreadSheet</title>
+    <link rel="stylesheet" type="text/css" href="tableStyle.css">
+    <meta charset="UTF-8"></meta>
+    <script type="text/javascript" src="lexer.js"></script>
+    <script type="text/javascript" src="formula.js"></script>
+    <script type="text/javascript" src="cell.js"></script>
+    <script type="text/javascript" src="tableModel.js"></script>
+    <script type="text/javascript" src="tableView.js"></script>
+    <script type="text/javascript" src="tableController.js"></script>
+
+    <script type="text/javascript">
+      function init () {
+      var t = new TableModel(50, 50);
+      var v = new TableView("test", t);
+      v.createTable();
+      var c = new TableController(v);
+      };
+
+      window.addEventListener("load", init);
+    </script>
+
+
+
+  </head>
+  <body>
+    <div id="test" ></div>
+
+  </body>
+</html>

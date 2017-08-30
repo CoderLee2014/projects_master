@@ -1,0 +1,42 @@
+2016.03.07 lundi
+
+1.test of the code given by the prof
+2.can't identify the operators of functions.
+3.find the place where we should add functionnalities.
+  ###read the code to learn the structure of the code
+  ###understand the objectif of this sujet:
+	=A1 + F(A1,B2)
+4.estimate the tasks:
+  ### identify the four functions: average, count, sum, stddev => lexer.js, formula, parser
+  ### formula.js(parse) => lexer succeded(average)
+  
+  
+2016.03.14 lundi
+  ### parser average => formula.js=> buid a class Average in formula.js => succeeded(almost 3 hours)
+5.algorithme of the function average
+  ### pass the model as a parameter
+  ### two children of type CellRef
+  ### get the domain area => add a return value(function colToIdx) in tableModel 
+  
+  
+2016.03.21 lundi
+  ### add a return value (function idxToCol() in tableModel)
+  =>succeed to AVERAGE(A1,B1)
+  
+6.algorithme of the function "count"
+  ###create the class in formula.js
+  ###add in the parser et analyser
+7.function of sum and stddev completed!
+
+2016.03.28 lundi
+
+8. test all the functions, they work well   ~
+9. Define functions
+  ### create the text input [view.define] and a button [view.yes] in [ TableView.js ]
+  ### add a listener to [view.yes] and [view.define] in tableController.js 
+  ### define the syntax of inputing [fun = ]
+
+10.addtion of a cell and a constant
+  ### define the format 
+      SUM(A1,1)
+  ## consider to add a structure of interval in formula.js
